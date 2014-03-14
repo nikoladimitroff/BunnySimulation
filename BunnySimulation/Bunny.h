@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <vector>
 
 enum class Color
 {
@@ -13,6 +14,8 @@ enum class Color
 	Red,
 };
 
+
+
 enum class BunnyGender
 {
 	Male,
@@ -20,9 +23,14 @@ enum class BunnyGender
 	Radioactive
 };
 
+
 class Bunny
 {
+protected:
+	Bunny()
+	{}
 public:
+	static std::vector<std::string> Names;
 	int age;
 	Color color;
 	std::string name;
@@ -35,7 +43,14 @@ public:
 
 	}
 
+	bool CanBreedWith(Bunny& other)
+	{
+		return true;
+	}
+
 	void Print();
 };
+
+
 
 #endif

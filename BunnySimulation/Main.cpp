@@ -2,6 +2,7 @@
 #include <string>
 
 #include "BunnyColony.h"
+#include "MaleBunny.h"
 
 using namespace std;
 

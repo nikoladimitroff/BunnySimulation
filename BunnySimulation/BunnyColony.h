@@ -6,14 +6,14 @@
 
 class BunnyColony
 {
-	std::vector<Bunny> bunnies;
+	std::vector<Bunny*> bunnies;
 public:
 	void Step();
 
 	BunnyColony()
 	{
-		Bunny first("nikola", Color::Black);
-		Bunny second("e syrdit", Color::Red);
+		Bunny* first = new Bunny("nikola", Color::Black);
+		Bunny* second = new Bunny("e syrdit", Color::Red);
 
 		this->bunnies.push_back(first);
 		this->bunnies.push_back(second);
