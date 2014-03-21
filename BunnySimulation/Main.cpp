@@ -16,5 +16,8 @@ int main()
 		colony.Step();
 	}
 
+
+	Bunny first("nikola", Color::Black);
+
 	return 0;
 }

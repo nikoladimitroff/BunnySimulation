@@ -8,12 +8,12 @@ using namespace std;
 class MaleBunny : public Bunny
 {
 public:
-	MaleBunny(string& name, Bunny& mother) : Bunny(name, mother)
+	MaleBunny(string& name, const Bunny& mother) : Bunny(name, mother)
 	{
 		this->gender = BunnyGender::Male;
 	}
 
-	virtual bool CanBreedWith(Bunny& other);
+	virtual bool CanBreedWith(const Bunny& other) const;
 };
 
 #endif

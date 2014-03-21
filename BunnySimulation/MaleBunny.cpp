@@ -6,9 +6,9 @@
 using namespace std;
 
 
-bool MaleBunny::CanBreedWith(Bunny& other)
+bool MaleBunny::CanBreedWith(const Bunny& other) const
 {
 	return this->age >= 2 &&
-		other.gender == BunnyGender::Female &&
-		other.age >= 2;
+		other.GetGender() == BunnyGender::Female &&
+		other.GetAge() >= 2;
 }

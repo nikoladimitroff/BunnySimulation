@@ -3,7 +3,7 @@
 
 using namespace std;
 
-bool RadioactiveBunny::CanBreedWith(Bunny& other)
+bool RadioactiveBunny::CanBreedWith(const Bunny& other) const
 {
 	return false;
 }
@@ -16,7 +16,7 @@ RadioactiveBunny* RadioactiveBunny::Infect(vector<Bunny*>& targets)
 	{
 		infectedIndex = rand() % targets.size();
 		infected = targets[infectedIndex];
-	} while (infected->gender == BunnyGender::Radioactive);
+	} while (infected->GetGender() == BunnyGender::Radioactive);
 
 
 	targets[infectedIndex] = new RadioactiveBunny(*infected);

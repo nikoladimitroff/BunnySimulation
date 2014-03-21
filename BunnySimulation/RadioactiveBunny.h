@@ -7,20 +7,20 @@
 class RadioactiveBunny : public Bunny
 {
 public:
-	RadioactiveBunny(std::string& name, Bunny& mother) : Bunny(name, mother)
+	RadioactiveBunny(std::string& name, const Bunny& mother) : Bunny(name, mother)
 	{
 		this->gender = BunnyGender::Radioactive;
 	}
 
-	RadioactiveBunny(Bunny& other)
+	RadioactiveBunny(const Bunny& other)
 	{
-		this->age = other.age;
-		this->name = other.name;
-		this->color = other.color;
+		this->age = other.GetAge();
+		this->name = other.GetName();
+		this->color = other.GetColor();
 		this->gender = BunnyGender::Radioactive;
 	}
 
-	virtual bool CanBreedWith(Bunny& other);
+	virtual bool CanBreedWith(const Bunny& other) const;
 	RadioactiveBunny* Infect(std::vector<Bunny*>& targets);
 };
 

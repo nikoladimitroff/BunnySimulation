@@ -5,12 +5,12 @@
 
 using namespace std;
 
-bool shouldDie(Bunny bunny)
+bool ShouldDie(const Bunny bunny)
 {
-	return bunny.age >= 10;
+	return bunny.GetAge() >= 10;
 }
 
-Bunny* GiveBirthToBunny(Bunny& mother)
+Bunny* GiveBirthToBunny(const Bunny& mother)
 {
 	std::string name = Bunny::Names.at(rand() % Bunny::Names.size());
 
@@ -49,8 +49,8 @@ void BunnyColony::Step()
 				cout << ".. Was born" << endl;
 			}
 		}
-		firstBunny->age++;
-		if (firstBunny->age < 10)
+		firstBunny->GrowOlder();
+		if (firstBunny->GetAge() < 10)
 		{
 			shouldLive.push_back(firstBunny);
 		}
@@ -64,7 +64,7 @@ void BunnyColony::Step()
 	for (iterator i = shouldLive.cbegin(); i != shouldLive.cend(); i++)
 	{
 		Bunny* bunny = *i;
-		if (bunny->gender == BunnyGender::Radioactive)
+		if (bunny->GetGender() == BunnyGender::Radioactive)
 		{
 			RadioactiveBunny* radioactive = static_cast<RadioactiveBunny*>(bunny);
 			RadioactiveBunny* infected = radioactive->Infect(shouldLive);

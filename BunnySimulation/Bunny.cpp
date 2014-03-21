@@ -13,7 +13,7 @@ Bunny::Bunny(string name, Color color)
 	this->name = name;
 }
 
-void Bunny::Print()
+void Bunny::Print() const
 {
 	std::cout << "Name: " << this->name
 		<< ", Age: " << this->age

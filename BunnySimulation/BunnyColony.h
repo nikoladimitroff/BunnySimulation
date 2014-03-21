@@ -18,6 +18,14 @@ public:
 		this->bunnies.push_back(first);
 		this->bunnies.push_back(second);
 	}
+
+	~BunnyColony()
+	{
+		for each (Bunny* bunny in this->bunnies)
+		{
+			delete bunny;
+		}
+	}
 };
 
 #endif
