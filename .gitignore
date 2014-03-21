@@ -7,7 +7,19 @@
 *.so
 *.dylib
 
+
 # Compiled Static libraries
 *.lai
 *.la
 *.a
+
+# Build folders
+Debug/
+Release/
+
+# Temp files
+*.filters
+*.opensdf
+*.rc
+*.aps
+*.suo

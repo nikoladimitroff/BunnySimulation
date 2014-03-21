@@ -1,0 +1,56 @@
+﻿Revert "Destructor for bunny colony, several other minor changes"
+
+This reverts commit 51e4a720db0c8de2ccf4690af32fee3d2775f9b2.
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+# On branch master
+# Your branch is ahead of 'origin/master' by 1 commit.
+#   (use "git push" to publish your local commits)
+#
+# Changes to be committed:
+#   (use "git reset HEAD <file>..." to unstage)
+#
+#	deleted:    .gitattributes
+#	modified:   BunnySimulation/Bunny.cpp
+#	modified:   BunnySimulation/Bunny.h
+#	modified:   BunnySimulation/BunnyColony.cpp
+#	modified:   BunnySimulation/BunnyColony.h
+#	deleted:    BunnySimulation/BunnySimulation.aps
+#	deleted:    BunnySimulation/BunnySimulation.rc
+#	deleted:    BunnySimulation/BunnySimulation.sdf
+#	deleted:    BunnySimulation/BunnySimulation.v12.suo
+#	deleted:    BunnySimulation/BunnySimulation.vcxproj.filters
+#	deleted:    BunnySimulation/Debug/Bunny.obj
+#	deleted:    BunnySimulation/Debug/BunnyColony.obj
+#	deleted:    BunnySimulation/Debug/BunnySimulation.Build.CppClean.log
+#	deleted:    BunnySimulation/Debug/BunnySimulation.exe
+#	deleted:    BunnySimulation/Debug/BunnySimulation.ilk
+#	deleted:    BunnySimulation/Debug/BunnySimulation.log
+#	deleted:    BunnySimulation/Debug/BunnySimulation.pdb
+#	deleted:    BunnySimulation/Debug/BunnySimulation.res
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/BunnySimulation.lastbuildstate
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/CL.read.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/CL.write.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/cl.command.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/link.command.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/link.read.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/link.write.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/rc.command.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/rc.read.1.tlog
+#	deleted:    BunnySimulation/Debug/BunnySimulation.tlog/rc.write.1.tlog
+#	deleted:    BunnySimulation/Debug/FemaleBunny.obj
+#	deleted:    BunnySimulation/Debug/Main.obj
+#	deleted:    BunnySimulation/Debug/MaleBunny.obj
+#	deleted:    BunnySimulation/Debug/RadioactiveBunny.obj
+#	deleted:    BunnySimulation/Debug/vc120.idb
+#	deleted:    BunnySimulation/Debug/vc120.pdb
+#	modified:   BunnySimulation/FemaleBunny.cpp
+#	modified:   BunnySimulation/FemaleBunny.h
+#	modified:   BunnySimulation/Main.cpp
+#	modified:   BunnySimulation/MaleBunny.cpp
+#	modified:   BunnySimulation/MaleBunny.h
+#	modified:   BunnySimulation/RadioactiveBunny.cpp
+#	modified:   BunnySimulation/RadioactiveBunny.h
+#
+
